@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: yoVomx8isqrz6aj1p08Gd9UH2NGUBYMCIfEj0NdgZLM
+id: node.leegrc_dom_domain_id
+field_name: leegrc_dom_domain_id
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: true
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

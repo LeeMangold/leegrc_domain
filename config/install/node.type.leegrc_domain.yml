@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: 2dxK0UJem38PnJMt9UAPTw4uvDLPFHCoeMCYIvM61sM
+name: Domain
+type: leegrc_domain
+description: 'This content type is used for managing domains.'
+help: 'Enter the details of the domain.'
+new_revision: true
+preview_mode: 1
+display_submitted: true

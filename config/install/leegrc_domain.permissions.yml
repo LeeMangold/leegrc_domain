@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: rpVZHtB0ovFMSgni7OyWTo_KC7hgJeE5vbreY7WS1a4
+'administer domain entities':
+  title: 'Administer domain entities'
+  description: 'Allow users to administer Domain entities.'
+  'restrict access': true

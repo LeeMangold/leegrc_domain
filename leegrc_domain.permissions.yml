@@ -1,0 +1,5 @@
+# leegrc_domain.permissions.yml
+administer domain entities:
+  title: 'Administer domain entities'
+  description: 'Allow users to administer domains.'
+  restrict access: true

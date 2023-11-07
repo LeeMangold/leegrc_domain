@@ -1,0 +1,8 @@
+name: 'Domain Content Type'
+type: module
+description: 'Provides a Domain content entity.'
+core_version_requirement: ^8 || ^9 || ^10
+package: 'LeeGRC'
+dependencies:
+  - drupal:field
+  - leemangold_host_record_field:host_record_field

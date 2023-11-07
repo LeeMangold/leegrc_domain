@@ -1,0 +1,20 @@
+{
+    "name": "leemangold/leegrc_domain",
+    "type": "drupal-module",
+    "description": "Provides a custom data type for Domains.",
+    "keywords": ["Drupal"],
+    "license": "MIT",
+    "require": {
+        "drupal/core": "^8.8 || ^9 || ^10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Drupal\\leegrc_domain\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "support": {
+        "issues": "",
+        "source": ""
+    }
+}
