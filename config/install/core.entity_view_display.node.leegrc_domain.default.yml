@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.leegrc_domain.field_leegrc_dom_updated_date
     - field.field.node.leegrc_domain.field_leegrc_domain_id
     - field.field.node.leegrc_domain.field_leegrc_registrar
-    - field.field.node.leegrc_domain.field_updated_date
     - node.type.leegrc_domain
   module:
     - datetime
@@ -75,15 +74,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 102
-    region: content
-  field_updated_date:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 104
     region: content
   links:
     settings: {  }
