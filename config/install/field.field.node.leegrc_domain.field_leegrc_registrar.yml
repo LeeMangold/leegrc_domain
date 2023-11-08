@@ -1,9 +1,12 @@
+
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_leegrc_registrar
     - node.type.leegrc_domain
+
+
 id: node.leegrc_domain.field_leegrc_registrar
 field_name: field_leegrc_registrar
 entity_type: node

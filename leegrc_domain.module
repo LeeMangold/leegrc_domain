@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * Implements hook_uninstall().
+ */
+
+function leegrc_domain_uninstall(): void
+{
+
+  $module_name = str_replace('_uninstall', '', __FUNCTION__);
+  // Obtain services from the container.
+  $config_factory = \Drupal::service('config.factory');
+  $file_system = \Drupal::service('file_system');
+  $module_handler = \Drupal::service('module_handler');
+
+  // Get the path to the Control module's config/install directory.
+  $config_path = $module_handler->getModule($module_name)->getPath() . '/config/install';
+
+  // Check if the directory exists.
+  if (is_dir($config_path)) {
+    // Scan the directory for yml files.
+    $files = scandir($config_path);
+
+    foreach ($files as $file) {
+      // Check if the file is a yml file.
+      if (pathinfo($file, PATHINFO_EXTENSION) === 'yml') {
+        // Remove the .yml extension to get the config name.
+        $config_name = pathinfo($file, PATHINFO_FILENAME);
+
+        // Delete the configuration.
+        $config_factory->getEditable($config_name)->delete();
+      }
+    }
+  } else {
+    // Log or handle that the directory does not exist.
+    \Drupal::logger($module_name)->warning('The config/install directory does not exist.');
+  }
+
+}

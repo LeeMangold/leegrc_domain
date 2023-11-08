@@ -1,9 +1,11 @@
-uuid: c078f7b2-7a48-4aa8-b4df-286a79bd28c0
+
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.leegrc_domain
+
+
 id: node.leegrc_domain.title
 field_name: title
 entity_type: node

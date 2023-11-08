@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.leegrc_domain.field_leegrc_dns_provider
     - field.field.node.leegrc_domain.field_leegrc_dom_created_date
     - field.field.node.leegrc_domain.field_leegrc_dom_expiration_date
     - field.field.node.leegrc_domain.field_leegrc_dom_host_records
@@ -30,6 +31,14 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_leegrc_dns_provider:
+    type: string_textfield
+    weight: 128
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_leegrc_dom_created_date:
     type: datetime_default

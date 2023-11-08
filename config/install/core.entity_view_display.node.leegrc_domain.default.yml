@@ -1,7 +1,9 @@
+
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.leegrc_domain.field_leegrc_dns_provider
     - field.field.node.leegrc_domain.field_leegrc_dom_created_date
     - field.field.node.leegrc_domain.field_leegrc_dom_expiration_date
     - field.field.node.leegrc_domain.field_leegrc_dom_host_records
@@ -20,11 +22,21 @@ third_party_settings:
     id: layout_onecol
     settings:
       label: ''
+
+
 id: node.leegrc_domain.default
 targetEntityType: node
 bundle: leegrc_domain
 mode: default
 content:
+  field_leegrc_dns_provider:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 108
+    region: content
   field_leegrc_dom_created_date:
     type: datetime_default
     label: above
